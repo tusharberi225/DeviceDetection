@@ -24,4 +24,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Whoami:(id)sender {
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.Label.text = @"I am an iPhone";
+    }
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        self.Label.text = @"I am an iPad";
+    }
+    
+    
+    
+}
 @end

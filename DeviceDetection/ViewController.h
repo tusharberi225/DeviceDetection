@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *Label;
+- (IBAction)Whoami:(id)sender;
 
 @end
 
